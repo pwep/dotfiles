@@ -1,0 +1,7 @@
+# Dotfiles #
+
+Working across a number of platforms now, and looking for a consistent experience.
+
+Thanks to [bndabbs dotfiles][0] for showing me how easy it was to use vim-plug
+
+[0]: https://github.com/bndabbs/dotfiles
