@@ -45,3 +45,6 @@ set number
 set numberwidth=6
 
 :let g:airline_theme='luna'
+let g:netrw_winsize = 25
+let g:netrw_browse_split = 2
+
