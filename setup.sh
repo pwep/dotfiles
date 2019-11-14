@@ -29,7 +29,7 @@ if [ ! -f "$HOME/.vim/colors/monokai.vim" ]; then
 fi
 
 # Symlink all of our dotfiles to the home directory
-for i in .vimrc .bashrc .bash_profile .bash_prompt .tmux.conf;
+for i in .vimrc .bashrc .bash_profile .bash_prompt .tmux.conf .mailcap;
 do
   ln "$params" "$script_home/$i" "$HOME/$i"
 done

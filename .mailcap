@@ -1,0 +1,10 @@
+text/html; lynx -dump -force_html %s; needsterminal; copiousoutput;
+#text/html; pandoc -f html -t markdown-shortcut_reference_links; copiousoutput; description=HTML Text; test=type pandoc >/dev/null
+#text/html; pandoc -f html -t markdown_strict; copiousoutput; description=HTML Text; test=type pandoc >/dev/null
+# https://raymii.org/s/articles/Viewing_PDF_docx_and_odt_files_in_Mutt.html
+application/vnd.openxmlformats-officedocument.wordprocessingml.document; pandoc --from docx --to markdown %s; copiousoutput
+application/vnd.oasis.opendocument.text; pandoc --from odt --to markdown %s; copiousoutput
+
+
+#text/html; w3m -I %{charset} -T text/html; copiousoutput;
+#https://gist.github.com/fwolf/f5bf675c80b818bd1941971853ae2422
